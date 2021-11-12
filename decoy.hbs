@@ -1,0 +1,22 @@
+<table>
+    <thead>
+        <th>Category</th>
+        {{#each this}}
+        <th>{{@key}}</th> 
+        {{/each}}
+    </thead> 
+    <tbody> 
+        <tr>
+              <th>Transportation</th>
+              {{#each this}} 
+                <td>{{this.auto_transport}}</td>
+              {{/each}} 
+       </tr>
+       <tr>
+              <th>Food</th>
+              {{#each this}} 
+                <td>{{this.food}}</td>
+              {{/each}} 
+       </tr>
+    </tbody> 
+</table> 
